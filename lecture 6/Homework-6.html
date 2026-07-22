@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div {
+      width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <h1>Novell Services Login</h1>
+    <form action="">
+      <label for="username">Username: </label>
+       <input type="text" id="username" placeholder="Enter your username" required />
+       <br> <br>
+       <label for="password">Password: </label>
+       <input type="password" id="password" placeholder="Enter your password" required />
+       <br> <br>
+       <label for="city">City of Employment: </label>
+       <input type="text" id="city" placeholder="Enter your city of employment" required />
+       <br> <br>
+       <label for="server">Web server: </label>
+       <select id="server" required>
+         <option value="">Select a server</option>
+         <option value="server1">Server 1</option>
+         <option value="server2">Server 2</option>
+         <option value="server3">Server 3</option>
+       </select>
+        <br> <br>
+        <label for="proffesion">Please specify your role:</label>
+        <label for="Admin">Admin</label>
+        <input type="radio" id="Admin" name="proffesion" required />
+        <label for="Engineer">Engineer</label>
+        <input type="radio" id="Engineer" name="proffesion" required />
+        <label for="Manager">Manager</label>
+        <input type="radio" id="Manager" name="proffesion" required />
+        <label for="Guest">Guest</label>
+        <input type="radio" id="Guest" name="proffesion" required />
+        <br> <br>
+        <label for="sso">Single Sign-on to the following:</label>
+        <label for="mail">Mail</label>
+        <input type="checkbox" id="mail" name="sso" />
+        <label for="payroll">Payroll</label>
+        <input type="checkbox" id="payroll" name="sso" />
+        <label for="self-service">Self-service</label>
+        <input type="checkbox" id="self-service" name="sso" />
+        <br> <br>
+        <button type="login">Login</button>
+        <button type="reset">Reset</button>
+    </form>
+  </div>
+
+  <div>
+    <h1>Pete's Pizza Delivery</h1>
+    <br> <br>
+    <h2>Online Order Form</h2>
+    <br> <br>
+    <h3>Requires fields</h3>
+    <fieldset>
+      <legend>Customer details</legend>
+      <form action="">
+        <label for="name">Name: </label>
+        <input type="text" id="name" placeholder="Enter your name" required />
+        <br> <br>
+        <label for="address">Address: </label>
+        <input type="text" id="address" placeholder="Enter your address" required />  
+        <br> <br>
+        <label for="city">Town/City: </label>
+        <input type="text" id="city" placeholder="your town/city" required />
+        <br> <br>
+        <label for="postcode">Postcode: </label>
+        <input type="text" id="postcode" placeholder="Enter your postcode" required />
+        <br> <br>
+        <label for="telephone">Tel:</label>
+        <input type="text" id="telephone" placeholder="Enter your telephone number" min="10" minlength="10" required />
+        <br> <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter your email" required />
+
+      </form>
+    </fieldset>
+    <fieldset>
+      <legend>Toppings</legend>
+      <input type="radio" id="margarita" name="toppings" />
+      <label for="margarita">Margarita</label>
+      <br> <br>
+      <input type="radio" id="four-seasons" name="toppings" />
+      <label for="four-seasons">Four Seasons</label>
+      <br> <br>
+      <input type="radio" id="meat-feast" name="toppings" />
+      <label for="meat-feast">Meat Feast</label>
+    </fieldset>
+    <fieldset>
+      <legend>Size</legend>
+      <input type="radio" id="small" name="size" />
+      <label for="small">Small</label>
+      <br> <br>
+      <input type="radio" id="medium" name="size" />
+      <label for="medium">Medium</label>
+      <br> <br>
+      <input type="radio" id="large" name="size" />
+      <label for="large">Large</label>
+    </fieldset>
+    <fieldset>
+      <legend>Extras</legend>
+      <input type="checkbox" id="mushrooms" name="extras" />
+      <label for="mushrooms">Mushrooms</label>
+      <br> <br>
+      <input type="checkbox" id="peppers" name="extras" />
+      <label for="peppers">Green Peppers</label>
+      <br> <br>
+      <input type="checkbox" id="anchovies" name="extras" />
+      <label for="anchovies">Anchovies</label>
+      <br> <br>
+      <input type="checkbox" id="extra-cheese" name="extras" />
+      <label for="extra-cheese">Extra Cheese</label>
+    </fieldset>
+    <fieldset>
+      <legend>Delivery</legend>
+      <label for="del-time">Preferred Delivery Time:</label>
+      <select type="time" id="del-time" name="del-time">
+        <option value="15">15 mins</option>
+        <option value="30">30 mins</option>
+        <option value="45">45 mins</option>
+        <option value="60">60 mins</option>
+        <option value="75">75 mins</option>
+      </select> />
+      <br> <br>
+      <label for="delivery-instructions">Delivery Instructions:</label>
+      <br> <br>
+      <textarea id="delivery-instructions" name="delivery-instructions" placeholder="Enter any delivery instructions"></textarea>
+    </fieldset>
+    <button type="submit">Submit Order</button>
+  </div>
+</body>
+</html>
