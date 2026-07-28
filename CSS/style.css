@@ -1,0 +1,26 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.card {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(161, 124, 195);
+  border: 2px solid black;
+  text-align: center;
+  align-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+
+.wrapper {  
+  height: 80vh; 
+  border: 3px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px;
+}
